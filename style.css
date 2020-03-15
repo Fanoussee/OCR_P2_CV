@@ -1,6 +1,6 @@
 #conteneur{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     margin: 20px;
     font-family: "Calibri", "Trebuchet MS", Arial, "Times New Roman", sans-serif;
 }
@@ -79,7 +79,7 @@ h1, h3 {
 #curriculum{
     padding: 20px;
     margin: 20px;
-    /*width: 100%;*/
+    width: 100%;
 }
 
 #curriculum h1{

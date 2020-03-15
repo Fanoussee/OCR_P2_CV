@@ -1,0 +1,178 @@
+#conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: "Calibri", "Trebuchet MS", Arial, "Times New Roman", sans-serif;
+}
+
+section{
+    margin-top : 50px;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+#personne{
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    max-width: 230px;
+    margin: 20px;
+    background-color: rgb(149,117,205);
+}
+
+.element{
+    padding-bottom: 20px;
+}
+
+#photo{
+    padding-top: 30px;
+    text-align: center;
+}
+
+#photo img {
+    border-radius: 50%;
+}
+
+#personne h1{
+    background-color: black;
+    color: rgba(149,117,205);
+    text-align: center;
+    margin-top: 0px;
+}
+
+#personne p{
+    padding: 0px 20px 0px 20px;
+    font-size: 0.8em;
+}
+
+.sousTitre{
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+#propos{
+    flex: 1;
+    text-align: justify;
+}
+
+.important{
+    font-weight: bold;
+}
+
+#loisirs{
+    display: flex;
+    justify-content: space-around;
+}
+
+#loisirs i{
+    border: black 2px solid;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+}
+
+#curriculum{
+    padding: 20px;
+    margin: 20px;
+    /*width: 100%;*/
+}
+
+#curriculum h1{
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+
+#prenom{
+    font-style: unset;
+    color: rgb(149,117,205);
+    font-weight: bold;
+}
+
+h2{
+    margin-top: -40px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#petitSeparateur{
+    border-top: 2px solid  rgb(149,117,205);
+    margin: -10px 0px 60px 0px;
+    width: 60px;
+
+}
+
+.entete{
+    display: flex;
+    align-items: baseline;
+    font-size: 1.4em;
+}
+
+.entete i{
+    color: rgb(149,117,205);
+    margin-right: 20px;
+} 
+
+.separateur{
+    border-top: 2px solid rgb(149,117,205); 
+    margin-top: -20px; 
+}
+
+.paragraphe{
+    display: flex;
+    align-items: baseline;
+    margin: 20px 0px 20px 0px;
+}
+
+h4{
+    font-size: 1.2em;
+    margin: 0px;
+    font-weight: bold;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1em;
+    margin: 5px 0px 5px 0px;
+}
+
+.paragraphe p, ul{
+    margin: 5px 0px 5px 0px;
+    font-size: 1em;
+}
+
+.paragraphe i{
+    margin-right: 10px;
+    color: rgb(149,117,205);
+    font-size: 0.6em;
+}
+
+.liste{
+    min-width: 130px;
+    max-width: 130px;
+}
+
+.texte li{
+    list-style: none ;
+}
+
+#recommandations{
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+#recommandations p{
+    width: 300px;
+}
+
+#recommandations h5{
+    margin-top: 30px;
+}
+
+#recommandations p{
+    margin: 0px;
+}

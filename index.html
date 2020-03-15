@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
 	<head>
 		<title>CV - Stéphanie TARDIEU</title>
+		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/1dcabc1971.js" crossorigin="anonymous"></script>
 	</head>
@@ -18,21 +19,31 @@
 				<div class="element" id="photo">
 					<!--Photo-->
 					<div>
-						<img src="identite.jpg"/>
+						<img alt="Mon Portrait" src="identite.jpg"/>
 					</div>
 				</div>
 
 				<div class="element" id="contact">
 					<!--Contact-->
 					<h1>contact</h1>
-					<p class="sousTitre">Adresse postale</p>
-					<p>33 Résidence chabasse<br/>16600 MORNAC</p>
-					<p class="sousTitre">Téléphone</p>
-					<p>07.70.25.67.97</p>
-					<p class="sousTitre">Adresse mail</p>
-					<p>
-						<a href="mailto : stephanie.t16@laposte.net">stephanie.t16@laposte.net</a>	
-					</p>
+					<div id="coordonnees">
+						<div>
+							<p class="sousTitre">Adresse postale</p>
+							<p>33 Résidence chabasse<br/>16600 MORNAC</p>
+						</div>
+						<div>
+							<p class="sousTitre">Téléphone</p>
+							<p>07.70.25.67.97</p>
+						</div>
+						<div>
+							<p class="sousTitre">Adresse mail</p>
+							<p>
+								<a href="mailto:stephanie.t16@laposte.net">stephanie.t16@laposte.net</a>	
+							</p>
+						</div>
+					</div>
+					
+					
 				</div>
 				
 				<div class="element" id="propos">
@@ -57,16 +68,16 @@
 					<!--Loisirs-->
 					<h1>loisirs</h1>
 					<div id="loisirs">
-						<i class="fas fa-volleyball-ball"></i>
-						<i class="fas fa-hiking"></i>
-						<i class="fab fa-steam-symbol"></i>
+						<i title="Volley Ball" class="fas fa-volleyball-ball"></i>
+						<i title="Randonnée" class="fas fa-hiking"></i>
+						<i title="Jeux vidéos" class="fab fa-steam-symbol"></i>
 					</div>
 				</div>
 				
 			</section>
 
 			<!--Section du Curriculum Vitae-->
-				<section  id="curriculum">
+			<section  id="curriculum">
 				<!--En-tête avec le prénom et le nom-->
 				<header>
 					<h1><em id="prenom">Stéphanie</em> TARDIEU</h1>
@@ -75,7 +86,7 @@
 				</header>
 
 				<!--FORMATION-->
-				<section>
+				<div>
 					<div class="entete">
 						<i class="fas fa-graduation-cap"></i>
 						<h3>Formation</h3>
@@ -88,7 +99,8 @@
 						<i class="far fa-dot-circle"></i>
 						
 						<div class="liste">
-							<p>2020-2021<br/>A domicile</p>
+							<p>2020-2021</p>
+							<p>A domicile</p>
 						</div>
 
 						<div class="texte">
@@ -112,7 +124,9 @@
 						<i class="fas fa-circle"></i>
 						
 						<div class="liste">
-							<p>2011-2016<br/>Bordeaux et <br/>à domicile</p>
+							<p>2011-2016</p>
+							<p>Bordeaux et</p>
+							<p>à domicile</p>
 						</div>
 						
 						<div class="texte">
@@ -132,10 +146,10 @@
 
 					</div>
 				
-				</section>
+				</div>
 
 				<!--EXPERIENCE PROFESSIONNELLE-->
-				<section>
+				<div>
 
 					<div class="entete">
 						<i class="fas fa-briefcase"></i>
@@ -149,7 +163,8 @@
 						<i class="far fa-dot-circle"></i>
 						
 						<div class="liste">
-							<p>2008-2020<br/>L'Isle d'Espagnac</p>
+							<p>2008-2020</p>
+							<p>L'Isle d'Espagnac</p>
 						</div>
 						
 						<div class="texte">
@@ -177,7 +192,8 @@
 						<i class="fas fa-circle"></i>
 						
 						<div class="liste">
-							<p>2011-2016<br/>A domicile</p>
+							<p>2011-2016</p>
+							<p>A domicile</p>
 						</div>
 						
 						<div class="texte">
@@ -196,10 +212,10 @@
 
 					</div>
 					
-				</section>
+				</div>
 
 				<!--RECOMMANDATIONS-->
-				<section>
+				<div>
 
 					<div class="entete">
 						<i class="fas fa-pencil-alt"></i>
@@ -214,25 +230,33 @@
 							<h5>Sophie HANNEQUIN</h5>
 							<p>Directrice, Ati de la Charente</p>
 							<p>Téléphone : 05.45.68.86.93</p>
-							<p>Email : direction.ati16@gmail.com</p>
+							<p>Email : <a href="mailto:direction.ati16@gmail.com">direction.ati16@gmail.com</a></p>
 						</div>
 						
 						<div>
 							<h5>Philippe GUÉRIF</h5>
 							<p>Ancien Directeur, Ati de la Charente</p>
 							<p>Téléphone : 05.45.94.90.88</p>
-							<p>Email : philippe.guerif@gmail.com</p>
+							<p>Email : <a href="mailto:philippe.guerif@gmail.com" >philippe.guerif@gmail.com</a></p>
 						</div>
 						
 					
 					</div>
 
-				</section>
+				</div>
 
 			</section>
 
 		</div>
 		
+		<p id="validationCSS">
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="CSS Valide !" />
+			</a>
+		</p>
+
 	</body>
 
 </html>

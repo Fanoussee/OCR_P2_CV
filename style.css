@@ -1,6 +1,5 @@
 #conteneur{
     display: flex;
-    /*flex-wrap: wrap;*/
     margin: 20px;
     font-family: "Calibri", "Trebuchet MS", Arial, "Times New Roman", sans-serif;
 }
@@ -103,7 +102,6 @@ h2{
     border-top: 2px solid  rgb(149,117,205);
     margin: -10px 0px 60px 0px;
     width: 60px;
-
 }
 
 .entete{
@@ -154,6 +152,12 @@ h5{
 .liste{
     min-width: 130px;
     max-width: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.liste p {
+    margin: 0px;
 }
 
 .texte li{
@@ -162,7 +166,6 @@ h5{
 
 #recommandations{
     display: flex;
-    /*justify-content: space-between;*/
 }
 
 #recommandations p{
@@ -175,4 +178,94 @@ h5{
 
 #recommandations p{
     margin: 0px;
+}
+
+#validationCSS{
+    text-align: right;
+}
+
+@media screen and (max-width: 1000px){
+    #conteneur{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 20px 0px 20px 0px;
+    }
+
+    #personne{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+    }
+
+    #coordonnees{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #curriculum{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #petitSeparateur{
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+     
+    .entete i{
+        display: none;
+    }
+    
+    .paragraphe{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .paragraphe i{
+        display: none;
+    }
+
+    .paragraphe li{
+        list-style: circle;
+    }
+
+    .liste{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        min-width: 100%;
+        background-color: rgb(149,117,205);
+    }
+
+    .liste p {
+        margin-right : 5px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    h4, h5{
+        color: rgb(149,117,205);
+    }
+
+    #recommandations{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #coordonnees{
+        display: flex;
+        flex-direction: column;
+    }
 }

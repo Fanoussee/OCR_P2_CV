@@ -3,15 +3,12 @@
     margin: 20px;
     font-family: "Calibri", "Trebuchet MS", Arial, "Times New Roman", sans-serif;
 }
-
 section{
     margin-top : 50px;
 }
-
 h1, h3 {
     text-transform: uppercase;
 }
-
 #personne{
     display: flex;
     flex-direction: column;
@@ -20,51 +17,41 @@ h1, h3 {
     margin: 20px;
     background-color: rgb(149,117,205);
 }
-
 .element{
     padding-bottom: 20px;
 }
-
 #photo{
     padding-top: 30px;
     text-align: center;
 }
-
 #photo img {
     border-radius: 50%;
 }
-
 #personne h1{
     background-color: black;
     color: rgba(149,117,205);
     text-align: center;
     margin-top: 0px;
 }
-
 #personne p{
     padding: 0px 20px 0px 20px;
     font-size: 0.8em;
 }
-
 .sousTitre{
     font-weight: bold;
     margin-bottom: -10px;
 }
-
 #propos{
     flex: 1;
     text-align: justify;
 }
-
 .important{
     font-weight: bold;
 }
-
 #loisirs{
     display: flex;
     justify-content: space-around;
 }
-
 #loisirs i{
     border: black 2px solid;
     font-size: 30px;
@@ -74,112 +61,91 @@ h1, h3 {
     text-align: center;
     padding: 5px;
 }
-
 #curriculum{
     padding: 20px;
     margin: 20px;
     width: 100%;
 }
-
 #curriculum h1{
     font-size: 2.5em;
     font-weight: lighter;
 }
-
 #prenom{
     font-style: unset;
     color: rgb(149,117,205);
     font-weight: bold;
 }
-
 h2{
     margin-top: -40px;
     font-size: 1.3em;
     font-weight: bold;
 }
-
 #petitSeparateur{
     border-top: 2px solid  rgb(149,117,205);
     margin: -10px 0px 60px 0px;
     width: 60px;
 }
-
 .entete{
     display: flex;
     align-items: baseline;
     font-size: 1.4em;
 }
-
 .entete i{
     color: rgb(149,117,205);
     margin-right: 20px;
 } 
-
 .separateur{
     border-top: 2px solid rgb(149,117,205); 
     margin-top: -20px; 
 }
-
 .paragraphe{
     display: flex;
     align-items: baseline;
     margin: 20px 0px 20px 0px;
 }
-
 h4{
     font-size: 1.2em;
     margin: 0px;
     font-weight: bold;
 }
-
 h5{
     font-weight: bold;
     font-size: 1em;
     margin: 5px 0px 5px 0px;
 }
-
 .paragraphe p, ul{
     margin: 5px 0px 5px 0px;
     font-size: 1em;
 }
-
 .paragraphe i{
     margin-right: 10px;
     color: rgb(149,117,205);
     font-size: 0.6em;
 }
-
 .liste{
     min-width: 130px;
     max-width: 130px;
     display: flex;
     flex-direction: column;
 }
-
 .liste p {
     margin: 0px;
 }
-
 .texte li{
     list-style: none ;
 }
-
 #recommandations{
     display: flex;
 }
-
 #recommandations p{
     width: 300px;
 }
-
 #recommandations h5{
     margin-top: 30px;
 }
-
 #recommandations p{
     margin: 0px;
 }
-
 #validationCSS{
     text-align: right;
 }
@@ -188,11 +154,10 @@ h5{
     #conteneur{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         margin: 0px;
-        padding: 20px 0px 20px 0px;
+        padding: 50px;
     }
-
     #personne{
         display: flex;
         flex-direction: column;
@@ -200,72 +165,91 @@ h5{
         min-width: 100%;
         margin: 0px 0px 20px 0px;
         padding: 0px;
+        text-align: center;
     }
-
+    #photo img{
+        width: 30%;
+    }
     #coordonnees{
-        display: flex;
-        justify-content: space-around;
+        font-size: 1.1em;
     }
-
+    #loisirs i{
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+    }
     #curriculum{
         margin: 0px;
         padding: 0px;
         width: 100%;
     }
-
     #petitSeparateur{
         margin-bottom: 10px;
     }
-    
 }
 
-@media screen and (max-width: 650px){
-     
+@media screen and (max-width: 700px){
+    #curriculum h1{
+        font-size: 3em;
+    }
+    .entete{
+        justify-content: center;
+    }
+    header h2{
+        font-size: 1.6em;
+    }
+    h3{
+        font-size: 1.6em;
+        text-align: center;
+    }
     .entete i{
         display: none;
     }
-    
     .paragraphe{
         display: flex;
         flex-direction: column;
         margin-top: 30px;
     }
-
     .paragraphe i{
         display: none;
     }
-
     .paragraphe li{
         list-style: circle;
     }
-
+    .texte {
+        font-size: 1.1em;
+    }
     .liste{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         max-width: 100%;
         min-width: 100%;
         background-color: rgb(149,117,205);
+        font-size: 1.3em;
     }
-
     .liste p {
         margin-right : 5px;
         font-style: italic;
         font-weight: bold;
     }
-
     h4, h5{
         color: rgb(149,117,205);
     }
-
     #recommandations{
         display: flex;
         flex-direction: column;
+        font-size: 1.2em;
+    }
+    #recommandations p{
+        width: auto;
     }
 }
 
 @media screen and (max-width: 500px){
-    #coordonnees{
+    .liste{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }

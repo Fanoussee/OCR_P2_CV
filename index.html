@@ -5,6 +5,7 @@
 	<head>
 		<title>CV - Stéphanie TARDIEU</title>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=max-device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/1dcabc1971.js" crossorigin="anonymous"></script>
 	</head>
@@ -14,67 +15,66 @@
 			<!--Division du site en deux parties : la personne et le curriculum-->
 			
 			<!--1ère partie : la personne-->
-			<section id="personne">
+			<aside id="personne">
 
 				<!--La personne est divisé en 4 parties : la photo, le contact, le "à propos" et les loisirs-->
 
 				<!--1.1 La Photo-->
-				<div class="element" id="photo">
-					
-					<div>
+				<section id="photo">
+					<p>
 						<img alt="Mon Portrait" src="identite.jpg"/>
-					</div>
-				</div>
+					</p>
+				</section>
 
 				<!--1.2 Le Contact-->
-				<div class="element" id="contact">
+				<section id="contact">
 					<h1>contact</h1>
 					<div id="coordonnees">
 						<div>
-							<p class="sousTitre">Adresse postale</p>
+							<p class="sousTitreCoordonnees">Adresse postale</p>
 							<p>33 Résidence chabasse<br/>16600 MORNAC</p>
 						</div>
 						<div>
-							<p class="sousTitre">Téléphone</p>
+							<p class="sousTitreCoordonnees">Téléphone</p>
 							<p>07.70.25.67.97</p>
 						</div>
 						<div>
-							<p class="sousTitre">Adresse mail</p>
+							<p class="sousTitreCoordonnees">Adresse mail</p>
 							<p>
 								<a href="mailto:stephanie.t16@laposte.net">stephanie.t16@laposte.net</a>	
 							</p>
 						</div>
 					</div>
-				</div>
+				</section>
 				
 				<!--1.3 Le "à propos"-->
-				<div class="element" id="propos">
+				<section id="propos">
 					<h1>à propos de moi</h1>
 					<p>Vous voulez créer un site internet pour que votre entreprise soit connue dans le monde entier ?
 						Que vos clients, actuels ou potentiels, puissent mieux vous connaître, qu'ils mesurent votre sérieux et votre professionnalisme ?
 					</p>
 					<p>Mais voilà, vous ne savez pas comment vous y prendre ?</p>
-					<p>Je suis <strong class="important">LA</strong> personne qu'il vous faut.</p>
+					<p>Je suis <strong>LA</strong> personne qu'il vous faut.</p>
 					<p>Ce que j’apprécie le plus dans mon métier, c’est le contact humain et le fait de travailler 
 						 en équipe avec le client. D’ailleurs, nous ne portons plus la "casquette" de client ou de 
-						 développeur web, nous sommes tout simplement des <strong class="important">ASSOCIÉS</strong>.
+						 développeur web, nous sommes tout simplement des <strong>ASSOCIÉS</strong>.
 					</p>
 					<p>Des associés, qui construisent ensemble, brique par brique, un projet qui leur tient à cœur.</p> 
-					<p>Car, pour moi, <strong class="important">VOTRE</strong> projet est aussi <strong class="important">MON</strong> projet.</p>
+					<p>Car, pour moi, <strong>VOTRE</strong> projet est aussi <strong>MON</strong> projet.</p>
 					<p>Contactez-moi pour que nous puissions échanger sur <strong>NOTRE PROJET</strong>.</p>
-				</div>
+				</section>
 				
 				<!--1.4 Les loisirs-->
-				<div class="element" id="activites">
+				<section id="activites">
 					<h1>loisirs</h1>
 					<div id="loisirs">
 						<i title="Volley Ball" class="fas fa-volleyball-ball"></i>
 						<i title="Randonnée" class="fas fa-hiking"></i>
 						<i title="Jeux vidéos" class="fab fa-steam-symbol"></i>
 					</div>
-				</div>
+				</section>
 				
-			</section>
+			</aside>
 
 			<!--2èmre partie : le Curriculum Vitae-->
 			<section  id="curriculum">
@@ -83,23 +83,23 @@
 					 l'expérience professionnelle et les recommandations-->
 
 				<!--2.1 l'en-tête avec le prénom et le nom et le métier-->
-				<header>
+				<header id="identite">
 					<h1><em id="prenom">Stéphanie</em> TARDIEU</h1>
 					<h2>Développeuse web freelance</h2>
 					<div id="petitSeparateur"></div>
 				</header>
 
 				<!--2.2 La Formation-->
-				<div>
+				<section>
+
 					<!--Le titre de la rubrique Formation-->
-					<div class="entete">
+					<header>
 						<i class="fas fa-graduation-cap"></i>
 						<h3>Formation</h3>
-					</div>
-					<!--Séparateur = liseret décoratif-->
-					<div class="separateur"></div>
+					</header>
+					
 					<!--Dernière formation-->
-					<div class="paragraphe">
+					<article>
 						<i class="far fa-dot-circle"></i>
 						<div class="liste">
 							<p>2020-2021</p>
@@ -118,9 +118,10 @@
 								<li>Création de sites responsives.</li>
 							</ul>
 						</div>
-					</div>
+					</article>
+
 					<!--Précédente formation-->
-					<div class="paragraphe">
+					<article>
 						<i class="fas fa-circle"></i>
 						<div class="liste">
 							<p>2011-2016</p>
@@ -141,20 +142,21 @@
 								<li>Réalisation d'un cahier des charges</li>
 							</ul>
 						</div>
-					</div>
-				</div>
+					</article>
+
+				</section>
 
 				<!--2.3 L'Expérience Professionnelle-->
-				<div>
+				<section>
+
 					<!--Le titre de la rubrique Expérience Professionnelle-->
-					<div class="entete">
+					<header>
 						<i class="fas fa-briefcase"></i>
 						<h3>Expérience Professionnelle</h3>
-					</div>
-					<!--Séparateur = liseret décoratif-->
-					<div class="separateur"></div>
+					</header>
+
 					<!--Le précédent métier avant Développeur Web-->
-					<div class="paragraphe">
+					<article>
 						<i class="far fa-dot-circle"></i>
 						<div class="liste">
 							<p>2008-2020</p>
@@ -176,9 +178,10 @@
 								 <li>Traitement des factures et du courrier</li>
 							</ul>
 						</div>
-					</div>
+					</article>
+
 					<!--Les réalisations personnelles de projets informatiques-->
-					<div class="paragraphe">
+					<article>
 						<i class="fas fa-circle"></i>
 						<div class="liste">
 							<p>2011-2016</p>
@@ -197,20 +200,19 @@
 								<li>Tableau Excel : calcul automatique des frais d'affranchissement</li>
 							</ul>
 						</div>
-					</div>
-				</div>
+					</article>
+				</section>
 
 				<!--2.4 Les Recommandations-->
-				<div>
+				<section>
 					<!--Le titre de la rubrique Recommandations-->
-					<div class="entete">
+					<header>
 						<i class="fas fa-pencil-alt"></i>
 						<h3>Recommandations</h3>
-					</div>
-					<!--Séparateur = liseret décoratif-->
-					<div class="separateur"></div>
+					</header>
+
 					<!--Les personnes qui me recommandent-->
-					<div id="recommandations">
+					<article id="recommandations">
 						<div>
 							<h5>Sophie HANNEQUIN</h5>
 							<p>Directrice, Ati de la Charente</p>
@@ -223,8 +225,8 @@
 							<p>Téléphone : 05.45.94.90.88</p>
 							<p>Email : <a href="mailto:philippe.guerif@gmail.com" >philippe.guerif@gmail.com</a></p>
 						</div>
-					</div>
-				</div>
+					</article>
+				</section>
 
 			</section>
 

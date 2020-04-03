@@ -17,7 +17,7 @@ h1, h3 {
     margin: 20px;
     background-color: rgb(149,117,205);
 }
-.element{
+#personne section{
     padding-bottom: 20px;
 }
 #photo{
@@ -37,7 +37,7 @@ h1, h3 {
     padding: 0px 20px 0px 20px;
     font-size: 0.8em;
 }
-.sousTitre{
+.sousTitreCoordonnees{
     font-weight: bold;
     margin-bottom: -10px;
 }
@@ -45,7 +45,7 @@ h1, h3 {
     flex: 1;
     text-align: justify;
 }
-.important{
+strong{
     font-weight: bold;
 }
 #loisirs{
@@ -66,6 +66,17 @@ h1, h3 {
     margin: 20px;
     width: 100%;
 }
+header{
+    border-bottom: rgb(149,117,205) 2px solid;
+    display: flex;
+    align-items: baseline;
+    font-size: 1.4em;
+}
+#identite{
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
 #curriculum h1{
     font-size: 2.5em;
     font-weight: lighter;
@@ -82,26 +93,20 @@ h2{
 }
 #petitSeparateur{
     border-top: 2px solid  rgb(149,117,205);
-    margin: -10px 0px 60px 0px;
+    margin: -25px 0px 60px 0px;
     width: 60px;
 }
-.entete{
-    display: flex;
-    align-items: baseline;
-    font-size: 1.4em;
-}
-.entete i{
+header i{
     color: rgb(149,117,205);
     margin-right: 20px;
 } 
-.separateur{
-    border-top: 2px solid rgb(149,117,205); 
-    margin-top: -20px; 
-}
-.paragraphe{
+article{
     display: flex;
     align-items: baseline;
     margin: 20px 0px 20px 0px;
+}
+h3{
+    margin-bottom: 5px;
 }
 h4{
     font-size: 1.2em;
@@ -113,11 +118,11 @@ h5{
     font-size: 1em;
     margin: 5px 0px 5px 0px;
 }
-.paragraphe p, ul{
+article p, ul{
     margin: 5px 0px 5px 0px;
     font-size: 1em;
 }
-.paragraphe i{
+article i{
     margin-right: 10px;
     color: rgb(149,117,205);
     font-size: 0.6em;
@@ -131,11 +136,14 @@ h5{
 .liste p {
     margin: 0px;
 }
-.texte li{
+li{
     list-style: none ;
 }
 #recommandations{
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: -10px;
 }
 #recommandations p{
     width: 300px;
@@ -167,11 +175,17 @@ h5{
         padding: 0px;
         text-align: center;
     }
-    #photo img{
-        width: 30%;
+    #personne img{
+        width: 200px;
+    }
+    #personne h1{
+        font-size: 1.8em;
     }
     #coordonnees{
-        font-size: 1.1em;
+        font-size: 1.5em;
+    }
+    #propos p{
+        font-size: 1.2em;
     }
     #loisirs i{
         width: 50px;
@@ -186,35 +200,49 @@ h5{
     #petitSeparateur{
         margin-bottom: 10px;
     }
+    header{
+        font-size: 1.5em;
+    }
+    article{
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width: 700px){
-    #curriculum h1{
-        font-size: 3em;
+    #conteneur{
+        padding: 10px;
     }
-    .entete{
+    header{
         justify-content: center;
+        border-top: rgb(149,117,205) 2px solid;
     }
-    header h2{
-        font-size: 1.6em;
+    #identite{
+        border: none;
+        font-size: 1.2em;
     }
     h3{
         font-size: 1.6em;
         text-align: center;
+        margin-top: 5px;
     }
-    .entete i{
-        display: none;
-    }
-    .paragraphe{
+    article{
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin: 50px;
     }
-    .paragraphe i{
-        display: none;
+    h4, h5{
+        text-align: center;
+        font-size: 1em;
+        color: rgb(149,117,205);
     }
-    .paragraphe li{
-        list-style: circle;
+    h4{
+        margin-top: 20px;
+    }
+    h5{
+        margin-bottom: 20px;
+    }
+    article li{
+        list-style: disc;
     }
     .texte {
         font-size: 1.1em;
@@ -229,27 +257,39 @@ h5{
         font-size: 1.3em;
     }
     .liste p {
-        margin-right : 5px;
+        margin-right : 10px;
         font-style: italic;
         font-weight: bold;
     }
-    h4, h5{
-        color: rgb(149,117,205);
-    }
+    #curriculum i{
+        display: none;
+    }    
     #recommandations{
         display: flex;
         flex-direction: column;
         font-size: 1.2em;
+        align-items: center;
+        text-align: center;
     }
-    #recommandations p{
-        width: auto;
+    #recommandations h5{
+        margin-bottom: 0px;
     }
 }
 
-@media screen and (max-width: 500px){
+@media all and (max-device-width: 480px){
+    header{
+        margin-bottom: 30px;
+    }
+    article{
+        margin: 0px 0px 30px 0px;
+    }
     .liste{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        font-size: 1em;
+    }
+    h4, h5{
+        text-align: center;
     }
 }
